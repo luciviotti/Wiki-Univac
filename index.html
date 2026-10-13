@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Centro de Ayuda | Univac.ERP</title>
+<meta name="description" content="Centro de Ayuda oficial de Univac.ERP: guías, procedimientos y respuestas basadas en la documentación oficial.">
+<link rel="icon" type="image/png" href="assets/favicon_univac.png">
+<link rel="preload" href="assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <button class="icon-btn menu-btn" id="btnMenu" aria-label="Abrir módulos" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="brand" href="#/" aria-label="Inicio del Centro de Ayuda">
+      <img src="assets/logo-univac.png" alt="Univac" class="brand-logo">
+      <span class="brand-sep" aria-hidden="true"></span>
+      <span class="brand-txt">Centro de Ayuda</span>
+    </a>
+    <form class="top-search" id="topSearch" role="search" autocomplete="off">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="topQ" placeholder="Buscar" aria-label="Buscar en el Centro de Ayuda">
+    </form>
+    <nav class="top-links" aria-label="Accesos">
+      <a href="#/asistente" class="btn-assist">Asistente</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar" aria-label="Módulos">
+    <div class="side-head">Módulos</div>
+    <nav id="sideNav"></nav>
+    <div class="side-foot">
+      <a href="#/fuentes">Fuentes y alcance</a>
+      <a href="#/revision">Observaciones de documentación</a>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+  <main id="contenido" class="main" tabindex="-1"></main>
+</div>
+
+<footer class="footer">
+  <div class="footer-in">
+    <img src="assets/logo-univac.png" alt="Univac" class="footer-logo">
+    <p>Centro de Ayuda de Univac.ERP. El contenido se basa exclusivamente en los manuales oficiales del sistema.<br>
+    Si no encontrás lo que buscás, contactá al equipo de soporte de Univac.</p>
+  </div>
+</footer>
+
+<script src="contenido.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
