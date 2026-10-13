@@ -198,8 +198,6 @@ mark{background:#fff1b8;color:inherit;padding:0 1px;border-radius:2px}
 .chat-form textarea:focus{outline:none}
 .chat-form button{border:0;background:var(--navy);color:#fff;padding:0 24px;font-weight:500;cursor:pointer}
 .small{font-size:12.5px;color:var(--muted)}
-.contact-group{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap}
-.contact-group .small{line-height:1}
 .manual-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line-2);font-size:14px}
 
 /* Responsive */
@@ -252,3 +250,8 @@ mark{background:#fff1b8;color:inherit;padding:0 1px;border-radius:2px}
 @keyframes spU{to{opacity:1;transform:scale(1) translateY(0)}}
 @keyframes spSq{to{opacity:1;transform:translate(0,0) scale(1)}}
 @media (prefers-reduced-motion:reduce){.splash{display:none}}
+
+/* Bloque "¿No encontraste lo que necesitabas?" */
+.feedback{align-items:flex-start;flex-direction:column;gap:12px}
+.feedback-btns{display:flex;flex-direction:column;gap:10px;width:100%;max-width:280px}
+.feedback-btns .btn{justify-content:center;width:100%}
