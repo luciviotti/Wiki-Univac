@@ -7,9 +7,36 @@
 <meta name="description" content="Centro de Ayuda oficial de Univac.ERP: guías, procedimientos y respuestas basadas en la documentación oficial.">
 <link rel="icon" type="image/png" href="assets/favicon_univac.png">
 <link rel="preload" href="assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(sessionStorage.getItem('splashVisto'))document.documentElement.classList.add('no-splash')}catch(e){}</script>
+<link rel="preload" href="assets/splash/u.png" as="image">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash-logo">
+    <img class="sp-u" src="assets/splash/u.png" alt="">
+    <img class="sp-sq sp-sq1" src="assets/splash/sq1.png" alt="">
+    <img class="sp-sq sp-sq2" src="assets/splash/sq2.png" alt="">
+    <img class="sp-sq sp-sq3" src="assets/splash/sq3.png" alt="">
+    <img class="sp-sq sp-sq4" src="assets/splash/sq4.png" alt="">
+  </div>
+</div>
+<script>
+(function(){
+  var s=document.getElementById('splash');
+  if(!s)return;
+  if(document.documentElement.classList.contains('no-splash')||window.matchMedia('(prefers-reduced-motion: reduce)').matches){s.remove();return;}
+  try{sessionStorage.setItem('splashVisto','1')}catch(e){}
+  var done=false;
+  function cerrar(){
+    if(done)return;done=true;
+    s.classList.add('out');
+    setTimeout(function(){s.remove()},600);
+  }
+  setTimeout(cerrar,2300);
+  s.addEventListener('click',cerrar);
+})();
+</script>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <header class="topbar">
   <div class="topbar-in">

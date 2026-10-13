@@ -249,7 +249,7 @@
       '<div class="meta"><span>Módulo: <b>' + esc(c.nombre) + '</b></span><span>Tema: <b>' + esc(a.tema) + '</b></span><span>Fuente: <b>' + esc([...new Set(a.fuentes.map(f => f.m))].join(', ')) + '</b></span>' +
       (a.ultimaRevision ? '<span>Revisión: <b>' + esc(a.ultimaRevision) + '</b></span>' : '') + '</div>' +
       restr + rev + body +
-      '<div class="feedback">¿No encontraste lo que necesitabas? <a class="btn ghost" href="#/asistente">Consultar al asistente</a><span class="contact-group"><span class="small">Contactá al equipo de soporte de Univac</span><a class="btn ghost" href="https://wa.me/5493564367491" target="_blank" rel="noopener noreferrer">Contactar al soporte</a></span></div>' +
+      '<div class="feedback">¿No encontraste lo que necesitabas? <a class="btn ghost" href="#/asistente">Consultar al asistente</a><span class="small">o contactá al equipo de soporte de Univac.</span></div>' +
       '</article><aside class="toc" aria-label="En este artículo"><div class="h">En este artículo</div>' + toc + '</aside></div>';
   }
   function related(a) {
